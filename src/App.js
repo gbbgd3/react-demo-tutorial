@@ -1,4 +1,7 @@
 import './App.css';
+import './Navbar';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
   const title = 'Welcome to the new blog';
@@ -6,9 +9,11 @@ function App() {
 
   return (
     <div className="App">
-     <div className="content">
-      <h1>App Component</h1>
-     </div>
+      <Navbar />
+
+      <div className="content">
+        <Home></Home>
+      </div>
     </div>
   );
 }
